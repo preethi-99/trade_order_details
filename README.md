@@ -15,6 +15,7 @@ cd trade-app
 2. Setup Environment
 ```bash
 pip install -r requirements.txt
+```
 3. Run with Docker
 ```bash
 docker-compose up --build
