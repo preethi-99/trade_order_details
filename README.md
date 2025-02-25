@@ -28,7 +28,7 @@ docker-compose up --build
 ## ☁️ Deployment on AWS EC2
 
 ### 1. SSH into EC2
-ssh -i trade-app.pem ubuntu@http://3.89.127.21
+ssh -i trade-app.pem ubuntu@3.89.127.21
 
 
 ### 2. Install Docker
