@@ -13,16 +13,13 @@ A backend service for managing trade orders, built using **FastAPI**, **PostgreS
 git clone https://github.com/your-username/trade-app.git
 cd trade-app
 2. Setup Environment
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
 3. Run with Docker
-bash
-Copy
-Edit
+```bash
 docker-compose up --build
 4. Test API
+```bash
 Swagger UI: http://localhost:8000/docs
 ReDoc UI: http://localhost:8000/redoc
 ☁️ Deployment on AWS EC2
