@@ -1,7 +1,10 @@
 📌 README.md
 # 🚀 Trade Order API (FastAPI + Docker + AWS + CI/CD)
 
-A backend service for managing trade orders, built using **FastAPI**, **PostgreSQL**, and **Docker**, deployed on **AWS EC2**, with automated **CI/CD using GitHub Actions**.
+A backend application for managing trade orders, built using **FastAPI**, **PostgreSQL**, and **Docker**, deployed on **AWS EC2**, with automated **CI/CD using GitHub Actions**. The programming language used is Python and for the database, PostgreSQL is used.
+The application -
+Accepts trade order details (e.g., symbol, price, quantity, order type) via POST /orders.
+Returns the list of submitted orders via GET /orders.
 
 ---
 
@@ -27,15 +30,19 @@ docker-compose up --build
 
 ## ☁️ Deployment on AWS EC2
 
-### 1. SSH into EC2
+### 1. Transfer Files to EC2 Using SCP
+To deploy the project on an AWS EC2 instance, transfer the application files using `scp`:
+scp -i ~/Downloads/trade-app.pem -r ~/Downloads/trade-app ubuntu@3.89.127.21:/home/ubuntu/
+
+### 2. SSH into EC2
 ssh -i trade-app.pem ubuntu@3.89.127.21
 
 
-### 2. Install Docker
+### 3. Install Docker in EC2 instance
 sudo apt update && sudo apt install docker.io docker-compose -y
 
 
-### 3. Deploy API
+### 4. Deploy API
 
 **API is now live at:**  
 [`http://http://3.89.127.21:8000/`]
@@ -60,12 +67,12 @@ sudo apt update && sudo apt install docker.io docker-compose -y
 ---
 
 ## 🛠 Tech Stack
-- **Backend:** FastAPI, Pydantic
+- **Backend:** FastAPI, Pydantic,Python
 - **Database:** PostgreSQL
 - **DevOps:** Docker, AWS EC2, GitHub Actions
 - **CI/CD:** Automated deployment
 
-## 📜 License
-MIT License © 2025 **Preethi Ranganathan**
+## ⚠️ Disclaimer
+This project was created as part of a company recruitment assessment.  
+All rights to this code remain with the author unless otherwise specified by the hiring company.
 
-🚀 **Developed with ❤️ for scalable cloud applications**
