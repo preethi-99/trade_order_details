@@ -52,4 +52,4 @@ async def websocket_endpoint(websocket: WebSocket):
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to the Trade Orders API"}
+    return {"message": "Welcome to the Trade Order Details API"}
