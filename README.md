@@ -28,7 +28,7 @@ trade-app/ ├── .github/workflows/deploy.yml # CI/CD Pipeline ├── Doc
 ```bash
 git clone https://github.com/your-username/trade-app.git
 cd trade-app
-2️⃣ Setup Environment
+###2️⃣ Setup Environment
 ```bash
 pip install -r requirements.txt
 3️⃣ Run with Docker
