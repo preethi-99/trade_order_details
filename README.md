@@ -1,6 +1,5 @@
 📌 README.md
 markdown
-
 # 🚀 Trade Order API (FastAPI + Docker + AWS + CI/CD)
 
 A backend service for managing trade orders, built using **FastAPI**, **PostgreSQL**, and **Docker**, deployed on **AWS EC2**, with automated **CI/CD using GitHub Actions**.
