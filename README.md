@@ -29,26 +29,30 @@ trade-app/ ├── .github/workflows/deploy.yml # CI/CD Pipeline ├── Doc
 git clone https://github.com/your-username/trade-app.git
 cd trade-app
 2️⃣ Setup Environment
-
+```bash
 pip install -r requirements.txt
 3️⃣ Run with Docker
-bash
+```bash
 docker-compose up --build
 4️⃣ Test API
+```bash
 Swagger UI: http://localhost:8000/docs
 ReDoc UI: http://localhost:8000/redoc
 ☁️ Deployment on AWS EC2
 1️⃣ SSH into EC2
-
+```bash
 ssh -i your-key.pem ubuntu@your-ec2-ip
 2️⃣ Install Docker
+```bash
 sudo apt update && sudo apt install docker.io docker-compose -y
 3️⃣ Deploy API
+```bash
 docker run -d -p 8000:8000 trade-api
 API is now live at:
 http://your-ec2-ip:8000
 
 🔄 CI/CD Pipeline (GitHub Actions)
+```bash
 Runs tests on pull requests.
 Builds & pushes Docker image.
 SSHs into EC2 & deploys the latest version.
