@@ -7,55 +7,48 @@ A backend service for managing trade orders, built using **FastAPI**, **PostgreS
 
 ---
 
-## 📌 Features
-- ✅ **REST API**: Create and fetch trade orders (`POST /orders`, `GET /orders`)
-- ✅ **Database**: Uses **PostgreSQL** for persistent storage
-- ✅ **WebSockets**: (Bonus) Real-time order updates
-- ✅ **Dockerized**: Runs in a container for portability
-- ✅ **Deployed on AWS EC2**
-- ✅ **CI/CD Pipeline**: Auto-deploys via **GitHub Actions**
-
----
-
-## 📂 Project Structure
-trade-app/ ├── .github/workflows/deploy.yml # CI/CD Pipeline ├── Dockerfile # Containerization ├── docker-compose.yml # Local multi-container setup ├── main.py # FastAPI entry point ├── models.py # Database models ├── schemas.py # Pydantic validation ├── database.py # Database connection ├── requirements.txt # Dependencies ├── README.md # Project documentation
-
-
-
 ## ⚡ Getting Started (Run Locally)
 
-### 1️⃣ **Clone Repository**
+### 1. Clone Repository
 ```bash
 git clone https://github.com/your-username/trade-app.git
 cd trade-app
-###2️⃣ Setup Environment
-```bash
+2. Setup Environment
+bash
+Copy
+Edit
 pip install -r requirements.txt
-3️⃣ Run with Docker
-```bash
+3. Run with Docker
+bash
+Copy
+Edit
 docker-compose up --build
-4️⃣ Test API
-```bash
+4. Test API
 Swagger UI: http://localhost:8000/docs
 ReDoc UI: http://localhost:8000/redoc
 ☁️ Deployment on AWS EC2
-1️⃣ SSH into EC2
-```bash
+1. SSH into EC2
+bash
+Copy
+Edit
 ssh -i your-key.pem ubuntu@your-ec2-ip
-2️⃣ Install Docker
-```bash
+2. Install Docker
+bash
+Copy
+Edit
 sudo apt update && sudo apt install docker.io docker-compose -y
-3️⃣ Deploy API
-```bash
+3. Deploy API
+bash
+Copy
+Edit
 docker run -d -p 8000:8000 trade-api
 API is now live at:
 http://your-ec2-ip:8000
 
 🔄 CI/CD Pipeline (GitHub Actions)
-```bash
 Runs tests on pull requests.
 Builds & pushes Docker image.
-SSHs into EC2 & deploys the latest version.
+SSHs into EC2 & deploys latest version.
 📌 Pipeline Config: .github/workflows/deploy.yml
 
 📬 API Endpoints
