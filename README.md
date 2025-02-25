@@ -8,7 +8,7 @@ A backend service for managing trade orders, built using **FastAPI**, **PostgreS
 ## ⚡ Getting Started (Run Locally)
 
 ### 1. Clone Repository
-git clone https://github.com/your-username/trade-app.git cd trade-app
+git clone https://github.com/preethi-99/trade_order_details.git cd trade-app
 
 
 ### 2. Setup Environment
@@ -20,15 +20,15 @@ docker-compose up --build
 
 
 ### 4. Test API
-- **Swagger UI**: [`http://localhost:8000/docs`](http://localhost:8000/docs)
-- **ReDoc UI**: [`http://localhost:8000/redoc`](http://localhost:8000/redoc)
+- **Swagger UI**: [`http://http://3.89.127.21:8000//docs`]
+- **ReDoc UI**: [`http://http://3.89.127.21:8000//redoc`]
 
 ---
 
 ## ☁️ Deployment on AWS EC2
 
 ### 1. SSH into EC2
-ssh -i your-key.pem ubuntu@your-ec2-ip
+ssh -i trade-app.pem ubuntu@http://3.89.127.21
 
 
 ### 2. Install Docker
@@ -38,7 +38,7 @@ sudo apt update && sudo apt install docker.io docker-compose -y
 ### 3. Deploy API
 
 **API is now live at:**  
-[`http://your-ec2-ip:8000`](http://your-ec2-ip:8000)
+[`http://http://3.89.127.21:8000/`]
 
 ---
 
@@ -47,7 +47,7 @@ sudo apt update && sudo apt install docker.io docker-compose -y
 - Builds & pushes Docker image.
 - SSHs into EC2 & deploys latest version.
 
-📌 **Pipeline Config:** [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)
+📌 **Pipeline Config:** [`.github/workflows/deploy.yml`]
 
 ---
 
